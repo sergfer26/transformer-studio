@@ -1,0 +1,4 @@
+.venv/
+.uv-cache/
+data/
+notebooks/.ipynb_checkpoints/
