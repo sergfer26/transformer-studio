@@ -17,8 +17,39 @@ uv sync
 uv run jupyter lab
 ```
 
+## Formatting
+
+This project uses `black` for both Python scripts and Jupyter notebooks.
+
+Install or update the environment after pulling dependency changes:
+
+```bash
+uv sync
+```
+
+Format the entire repository:
+
+```bash
+uv run black .
+```
+
+Format only notebooks:
+
+```bash
+uv run black notebooks
+```
+
+Format only Python scripts:
+
+```bash
+uv run black path/to/script.py
+```
+
+`black` is installed with the `jupyter` extra, so `.ipynb` files are formatted natively in addition to `.py` files.
+
 The current environment is inferred from the checked-in notebook code and includes:
 
+- `black[jupyter]`
 - `torch`
 - `torchvision`
 - `numpy`
