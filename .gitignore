@@ -2,3 +2,4 @@
 .uv-cache/
 data/
 notebooks/.ipynb_checkpoints/
+notebooks/models/
